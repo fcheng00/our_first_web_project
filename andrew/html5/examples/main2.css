@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+    color: steelblue;
+}
+body {
+    margin: 10px 10px 10px 10px;
+    border-width: 2020px;
+    border-color: gray;
+    border-style: double;
+    padding: 15px 15px 15px 15px;
+    height: 100px;
+    width: 300px;
+}
