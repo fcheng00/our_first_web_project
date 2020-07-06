@@ -102,9 +102,9 @@ footer {
     margin-bottom: 20px;
     width: 200px;
 }
-.warning-A1 {
+.warning-sug {
     font-size: 25px;
-    border-width: 10px;
+    border-width: 15px;
     border-style: solid;
     border-color: red;
 }
