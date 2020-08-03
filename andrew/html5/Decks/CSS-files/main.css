@@ -108,3 +108,12 @@ footer {
     border-style: solid;
     border-color: red;
 }
+.A3-4 {
+    box-sizing: content-box;
+}
+.A1 {
+    box-sizing: content-box;
+}
+.A2 {
+    box-sizing: content-box;
+}
