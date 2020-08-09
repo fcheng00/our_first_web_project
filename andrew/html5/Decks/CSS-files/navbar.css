@@ -1,6 +1,6 @@
 nav {
-    height: 50px;
-    margin: 20px 0 5px 0;
+    height: 55px;
+    margin: 18px 0 5px 0;
     padding-left: 5px;
 }
     nav ul {
@@ -11,12 +11,12 @@ nav {
             display: block;
         }
 .navlink {
-    height: 30px;
+    height: 28px;
     margin-right: 12px;
     font-size: 20px;
     float: left;
     padding-top: 3px;
-    color: lightgray;
+    color: lightblue;
     text-decoration: none;
 }
 .backgroundgradient {
