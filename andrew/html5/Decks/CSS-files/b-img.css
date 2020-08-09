@@ -1,5 +1,5 @@
 #index {
-    background: lightskyblue url("../background-images/b-image-for-index.jpg") no-repeat fixed center;
+    background: lightskyblue url("../background-images/b-image-for-index.jpg") repeat-y fixed center;
 }
 #A3_4 {
     background: lightskyblue url("../background-images/arena_pekkasplayhouse.png") repeat-x fixed center;
