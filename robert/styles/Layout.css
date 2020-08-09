@@ -9,13 +9,6 @@ header {
     font-weight: bold;
 }
 
-.searchbox {
-    float: right;
-    padding: 5px;
-    margin: 10px 10px;
-    width: 200px;
-}
-
 .headerlogo {
     float: left;
     margin-right: 10px;
@@ -25,6 +18,48 @@ header {
         height: 60px;
         width: 60px;
     }
+
+#mainHeader {
+    height: 80px;
+}
+
+nav {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    padding-left: 5px;
+}
+
+    nav ul {
+        list-style: none;
+        padding: 0px;
+    }
+
+        nav ul li {
+            display: block;
+        }
+
+.navlink {
+    height: 35px;
+    margin-right: 10px;
+    font-size: 18px;
+    float: left;
+    padding-top: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.backgroundgradient {
+    background-color:#603813;
+}
+
+.searchbox {
+    float: right;
+    padding: 5px;
+    margin: 10px 10px;
+    width: 200px;
+}
 
 #headername {
     font-size: 40px;
@@ -41,7 +76,7 @@ header {
 
 #coffeeofthemonth {
     float: right;
-    width: 200px;
+    width: 300px;
 }
 
 #welcometext {
@@ -99,23 +134,23 @@ header {
     float: left;
 }
 
-    .coffeebestsellers > header {
-        background-color: #603813;
-        color: white;
-        padding-left: 10px;
-    }
+.coffeebestsellers > header {
+    background-color: #603813;
+    color: white;
+    padding-left: 10px;
+}
 
 .accessoriesbestsellers {
     clear: both;
 }
 
-    .accessoriesbestsellers > header {
-        height: 30px;
-        line-height: 30px;
-        background-color: #603813;
-        color: white;
-        padding-left: 10px;
-    }
+.accessoriesbestsellers > header {
+    height: 30px;
+    line-height: 30px;
+    background-color: #603813;
+    color: white;
+    padding-left: 10px;
+}
 
 .productarticle {
     width: 200px;
@@ -247,5 +282,10 @@ footer {
     color: green;
     font-weight: bold;
     padding-top: 15px;
+}
+
+.myHeader {
+    color: greenyellow
+
 }
 
