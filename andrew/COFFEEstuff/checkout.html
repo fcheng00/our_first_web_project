@@ -34,6 +34,52 @@
         <div id="coffeeofthemonth">
             <img src="images/cotm.jpg">
         </div>
+
+        <section class="coffdetails">
+            <header class="blockheader">
+                <span>Checkout</span>
+            </header>
+
+            <form id="mainForm" action="http://localhost:8080/order" method="post">
+                <fieldset class="box">
+                    <legend>Your details</legend>
+                    <div>
+                        <p>
+                            <label class="textlabel" for="firstNameLabel">First name</label>
+                            <input type="text" name="FirstName" id="FirstNameInput" autofocus class="textinput" 
+                            placeholder="Enter your first name">
+                        </p>
+                        <p>
+                            <label class="textlabel" for="lastNameLabel">Last name</label>
+                            <input type="text" name="lastName" id="LastNameInput" class="textinput">
+                        </p>
+                        <p>
+                            <label class="textlabel" for="emailInput">Email</label>
+                            <input type="text" name="email" id="emailInput" class="textinput" required>
+                        </p>
+                    </div>
+                </fieldset>
+                <br />
+                <fieldset class="box">
+                    <legend>Your order</legend>
+                    <div>
+                        <p>
+                            <label class="textlabel" for="deliveryDateInput">Requested delivery date</label>
+                            <input type="text" name="date" id="Birthday" class="textinput" placeholder="Enter a Date">
+                        </p>
+                        <p>
+                            <label class="textlabel" for="colorInput">Wrapping paper color</label>
+                            <input type="text" name="color" id="color" class="textinput">
+                        </p>
+                        <p>
+                            <label class="textlabel" for="bowInput">How many bows on the package?</label>
+                            <input type="text" name="bowInput" id="Bows" class="textinput" >
+                        </p>
+                    </div>
+                </fieldset>
+                <button>Place order</button>
+            </form>
+        </section>
     </main>
 </body>
 </html>
