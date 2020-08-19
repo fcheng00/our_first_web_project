@@ -3,9 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./CSS-for-COFFEEstuff/Layout.css">
 </head>
 <body>
-    
+    <header>
+        <div>
+            <a class="headerlogo" href="index.html">
+                <img src="images/logo.png" />
+            </a>
+            <span id="headername">Joe's Coffee Store</span>
+        </div>
+    </header>
+    <main>
+        <nav class="backgroundgradient">
+            <ul>
+                <li><a class="navlink" href="index.html">Home</a></li>
+                <li><a class="navlink" href="blog.html">Blog</a></li>
+                <li><a class="navlink" href="allcoffees.html">All Coffees</a></li>
+                <li><a class="navlink" href="accessories.html">Accessories</a></li>
+                <li><a class="navlink" href="Gifts.html">Gifts</a></li>
+                <li><a class="navlink" href="findus.html">Find us</a></li>
+                <li><a class="navlink" href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+        <div id="welcomeimage">
+            <img src="images/coffeeheader.jpg">
+        </div>
+
+        <div id="coffeeofthemonth">
+            <img src="images/cotm.jpg">
+        </div>
+
+        <section class="coffdetails">
+            <header class="blockheader">
+                <span>Checkout</span>
+            </header>
+
+            <form id="mainForm" action="http://localhost:8080/order" method="post">
+                <fieldset class="box">
+                    <legend>Your details</legend>
+                    <div>
+                        <p>
+                            <label class="textlabel" for="firstNameLabel">First name</label>
+                            <input type="text" name="FirstName" id="FirstNameInput" autofocus class="textinput"
+                                placeholder="Enter your first name">
+                        </p>
+                        <p>
+                            <label class="textlabel" for="lastNameLabel">Last name</label>
+                            <input type="text" name="lastName" id="LastNameInput" class="textinput">
+                        </p>
+                        <p>
+                            <label class="textlabel" for="emailInput">Email</label>
+                            <input type="email" name="email" id="emailInput" class="textinput" required>
+                        </p>
+                    </div>
+                </fieldset>
+                <br />
+                <fieldset class="box">
+                    <legend>Your order</legend>
+                    <div>
+                        <p>
+                            <label class="textlabel" for="deliveryDateInput">Requested delivery date</label>
+                            <input type="date" name="date" id="Birthday" class="textinput" placeholder="Enter a Date">
+                        </p>
+                        <p>
+                            <label class="textlabel" for="colorInput">Wrapping paper color</label>
+                            <input type="color" name="color" id="color" class="textinput">
+                        </p>
+                        <p>
+                            <label class="textlabel" for="bowInput">How many bows on the package?</label>
+                            <input type="number" name="bowInput" id="Bows" class="textinput">
+                        </p>
+                    </div>
+                </fieldset>
+                <button>Place order</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
