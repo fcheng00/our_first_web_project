@@ -288,4 +288,5 @@ function comparisonSample() {
 
     //Greater than (>)
     console.log('price > 10 = ' + (price > 10).toString());
+    
 }
