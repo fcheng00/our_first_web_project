@@ -288,5 +288,45 @@ function comparisonSample() {
 
     //Greater than (>)
     console.log('price > 10 = ' + (price > 10).toString());
-    
+
+    //Greater than or equal to (>=)
+    console.log('price >= price = ' + (price >= price).toString());
+
+    //Less than (<)
+    console.log('price < 10 = ' + (price < 1500).toString());
+
+    //Less than or equal to (<=)
+    console.log('price <= price = ' + (price <= price).toString());
+
+    //Ternary (?)
+    result = price < 1500 ? 'less than 1500' : 'greater than 1500';
+    console.log('Ternary = ' + result);
+}
+
+function truefalseSample() {
+    let color = 'Red';
+    let price = 200;
+    let result;
+
+    console.log('Check for "true" examples');
+    //Evaluate the expression
+    result = price > 10;
+    console.log(result);
+
+    //Test the statement
+    if (price > 10) {
+        console.log('price > 10');
+    }
+
+    //Check if price is not 0
+    if (price) {
+        console.log('price > 0');
+    }
+
+    //Check if color has a value
+    if (color) {
+        console.log('color > 0');
+    }
+    console.log('');
+    console.log('Check for "false" value');
 }
