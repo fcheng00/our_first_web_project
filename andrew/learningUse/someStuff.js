@@ -422,8 +422,37 @@ function attemptDivision() {
     }
 }
 
+function referenceError() {
+    let result;
+
+    try {
+        result = x / 10;
+    } catch (error) {
+        handleError(error);
+    }
+}
+
 function handleError(error) {
     switch (error.name) {
-        
+        case 'ReferenceError':
+            console.log('Reference error: ' + error.message);
+            break;
+        case 'RangeError':
+            console.log('Range error: ' + error.message); 
+            break;
+        case 'typeError':
+            console.log('Type error: ' + error.message);
+            break;
+        case 'URIError':
+            console.log('URI error: ' + error.message);
+            break;
+        case 'syntaxError':
+            console.log('Syntax error: ' + error.message);
+            break;
+        case 'evalError':
+            console.log('Evaluation error: ' + error.message);
+            break;
+        default:
+            console.log('Error type: ' + error.name + ' - Message: ' + error.message);
     }
 }
