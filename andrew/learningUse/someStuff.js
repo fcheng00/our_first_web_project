@@ -330,3 +330,44 @@ function truefalseSample() {
     console.log('');
     console.log('Check for "false" value');
 }
+
+function logicalSamples() {
+    let price = 200;
+
+    //And operator (&&)
+    if (price > 10 && price < 1600) {
+        console.log('price > 10 && price < 1600 is "true"');
+    }
+
+    //And operator (&&)
+    if (price > 10 && price < 200) {
+        console.log('price > 10 && price < 200 is "true"');
+    } else {
+        console.log('price > 10 && price < 200 is "false"');
+    }
+
+    //Or operator (||)
+    if (price > 10 || price < 1400) {
+       console.log('price > 10 || price < 1400 is "true"'); 
+    }
+
+    //Or operator (||)
+    if (price > 10 || price > 1400) {
+        console.log('price > 10 || price < 1400 is "true"'); 
+    }
+
+    //Not operator (!)
+    if (!(price < 10)) {
+        console.log('!(price < 10) is "true"');
+    }
+}
+
+function simpleTryCatch() {
+    let result;
+
+    try {
+        result = x / 10;
+    } catch (error) {
+        console.log(error.message);
+    }
+}
