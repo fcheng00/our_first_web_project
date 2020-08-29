@@ -421,3 +421,9 @@ function attemptDivision() {
         };
     }
 }
+
+function handleError(error) {
+    switch (error.name) {
+        
+    }
+}
