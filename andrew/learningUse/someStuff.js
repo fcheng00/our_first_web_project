@@ -371,3 +371,53 @@ function simpleTryCatch() {
         console.log(error.message);
     }
 }
+
+function finallyCatchSample() {
+    let result;
+
+    try {
+        console.log('An error will occur.');
+        result = x / 10;
+        console.log('This line will never run.');
+    } catch (error) {
+        console.log('In the "catch" block:' + error.message);
+    }
+    finally {
+        console.log('In the "finally" block');
+    }
+}
+
+function finallySuccessSample() {
+    let result;
+    let x = 100;
+
+    try {
+        console.log('An error wont occur.');
+        result = x / 10;
+    } catch (error) {
+        console.log('In the "catch" block:' + error.message);
+    }
+    finally {
+        console.log('In the "finally" block');
+    }
+}
+
+function throwError() {
+    try {
+        attemptDivision();
+    } catch {
+        console.log(error.message + ' - Error Type: ' + error.name);
+    }
+}
+function attemptDivision() {
+    let result;
+
+    try {
+        result = x / 10;
+    } catch (error) {
+        throw {
+            'message': 'In the attemptDivision() method the following error occured' + error.message,
+            'name': 'customError'
+        };
+    }
+}
