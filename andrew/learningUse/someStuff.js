@@ -432,6 +432,36 @@ function referenceError() {
     }
 }
 
+function rangeError() {
+    let result = 10;
+
+    try {
+        result.toPrecision(200);
+    } catch (error) {
+        handleError(error);
+    }
+}
+
+function typeError() {
+    let result = 0;
+
+    try {
+        result.toUpperCase();
+    } catch (error) {
+        handleError(error);
+    }
+}
+
+function uriError() {
+    let uri = 'https://github.com/';
+
+    try {
+        
+    } catch (error) {
+        
+    }
+}
+
 function handleError(error) {
     switch (error.name) {
         case 'ReferenceError':
@@ -440,16 +470,16 @@ function handleError(error) {
         case 'RangeError':
             console.log('Range error: ' + error.message); 
             break;
-        case 'typeError':
+        case 'TypeError':
             console.log('Type error: ' + error.message);
             break;
         case 'URIError':
             console.log('URI error: ' + error.message);
             break;
-        case 'syntaxError':
+        case 'SyntaxError':
             console.log('Syntax error: ' + error.message);
             break;
-        case 'evalError':
+        case 'EvalError':
             console.log('Evaluation error: ' + error.message);
             break;
         default:
