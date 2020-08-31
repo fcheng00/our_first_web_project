@@ -462,6 +462,14 @@ function uriError() {
     }
 }
 
+function syntaxError() {
+    try {
+        let sum = eval('alert("Hello World")');
+    } catch (error) {
+        handleError(error);
+    }
+}
+
 function handleError(error) {
     switch (error.name) {
         case 'ReferenceError':
