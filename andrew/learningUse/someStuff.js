@@ -494,3 +494,38 @@ function handleError(error) {
             console.log('Error type: ' + error.name + ' - Message: ' + error.message);
     }
 }
+
+let _products = [
+    {
+        'productID': 948,
+        'name': 'iPhone XS',
+        'productNumber': 'AE-F5Q1-54',
+        'color': 'Yellow',
+        'standardPrice': 999.99,
+        'listPrice': 1299.99
+    },
+    {
+        'productID': 570,
+        'name': 'Sport-R Scooter',
+        'productNumber': 'XP-P5G5-24',
+        'color': 'Blue',
+        'standardPrice': 74.99,
+        'listPrice': 89.99
+    }
+];
+
+function typeofSample() {
+    let product = _products[0];
+    let introDate = new Date();
+    let strValue = new String();
+    let isActive = false;
+    let result;
+    let value = null;
+
+    console.log('_products = ' + typeof _products);
+    console.log('product = ' + typeof product);
+    console.log('product.productID = ' + typeof product.productID);
+    console.log('product.productNumber = ' + typeof product.productNumber);
+    console.log('strValue = ' + typeof strValue);
+    console.log('introDate = ' + typeof introDate);
+}
