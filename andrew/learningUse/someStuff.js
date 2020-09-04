@@ -528,4 +528,24 @@ function typeofSample() {
     console.log('product.productNumber = ' + typeof product.productNumber);
     console.log('strValue = ' + typeof strValue);
     console.log('introDate = ' + typeof introDate);
+    console.log('isActive = ' + typeof isActive);
+    console.log('result = ' + typeof result);
+    console.log('value = ' + typeof value);
+    console.log('typeofSample() = ' + typeof typeofSample);
+}
+
+function constructorSample() {
+    let product = _products[0];
+    let introDate = new Date();
+    let strValue = new String();
+    let isActive = false;
+
+    console.log('_products = ' + _products.constructor.toString());
+    console.log('product = ' + product.constructor.toString());
+    console.log('product.productID = ' + product.productID.constructor.toString());
+    console.log('productNumber = ' + productNumber.constructor.toString());
+    console.log('introDate = ' + introDate.constructor.toString());
+    console.log('strValue = ' + strValue.constructor.toString());
+    console.log('isActive = ' + isAcitve.constructor.toString());
+    console.log('constructorSample() = ' + constructorSample.constructor.toString());
 }
