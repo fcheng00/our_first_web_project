@@ -549,3 +549,29 @@ function constructorSample() {
     console.log('isActive = ' + isAcitve.constructor.toString());
     console.log('constructorSample() = ' + constructorSample.constructor.toString());
 }
+
+function helperFunctionSample() {
+    let introDate = new Date();
+    let result;
+    let value = null;
+
+    //Use helper functions that return boolean values
+    console.log('_products is Array? = ' + isArray(_products));
+    console.log('introDate is Date? = ' + isDate(introDate));
+
+    //Be sure to check if something is null prior to using
+    console.log('result = ' + isNullOrUndefined(result) ? 'null/undefined' : 'has value');
+    console.log('value = ' + isNullOrUndefined(value) ? 'null/undefined' : 'has value');
+}
+
+function isArray(value) {
+    return value.constructor.toString().indexOf('Array') > -1;
+}
+
+function isDate(value) {
+    return value.constructor.toString().indexOf('Date') > -1;
+}
+
+function isNullOrUndefined(value) {
+    return value === null || allue === undefined;
+}
