@@ -495,7 +495,7 @@ function handleError(error) {
     }
 }
 
-let _products = [
+let __products = [
     {
         'productID': 948,
         'name': 'iPhone XS',
@@ -575,3 +575,33 @@ function isDate(value) {
 function isNullOrUndefined(value) {
     return value === null || allue === undefined;
 }
+
+function instanceofOperator() {
+    let prod = new Product(680, 'HL Road Frame - Black, 58', 'FR-R92B-58');
+    let dt = new Date();
+    let name = new String('New Product');
+    let value = 'A simple string';
+
+    console.log('prod instanceof Product = ' + (prod instanceof Product).toString());
+    console.log('prod instanceof Object = ' + (prod instanceof Object).toString());
+    console.log('dt instanceof Date = ' + (dt instanceof Date).toString());
+    console.log('dt instanceof Object = ' + (dt instanceof Object).toString());
+    console.log('name instanceof String = ' + (name instanceof String).toString());
+    console.log('value instanceof String = ' + (value instanceof String).toString());
+    console.log('value instanceof Object = ' + (value instanceof Object).toString());
+}
+
+function Product(id, name, number) {
+    this.productID = id;
+    this.name = name;
+    this.productNumber = number;
+    this.color = 'Black';
+    this.standardPrice = 10;
+    this.listPrice = 30;
+}
+
+console.log('Begin global scope sample');
+console.log(this.toString());
+console.log('this === window = ' + (this === window).toString());
+console.log('End: global scope sample');
+
