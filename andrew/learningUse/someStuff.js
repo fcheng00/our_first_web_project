@@ -605,3 +605,7 @@ console.log(this.toString());
 console.log('this === window = ' + (this === window).toString());
 console.log('End: global scope sample');
 
+function functionScope() {
+    console.log(this.toString());
+    console.log('this === window = ' + (this === window).toString());
+}
