@@ -609,3 +609,7 @@ function functionScope() {
     console.log(this.toString());
     console.log('this === window = ' + (this === window).toString());
 }
+
+function eventHandler(ctl) {
+    console.log(ctl.toString());
+}
